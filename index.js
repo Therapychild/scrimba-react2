@@ -1,12 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { App } from './App.js';
+import { data } from './data.js';
 
-class Main extends React.Component {
-  render() {
-    return (
-      <h1>My React Solo Project!</h1>
-    );
-  }
-}
-
-ReactDOM.render(<Main />, document.getElementById('root'));
+ReactDOM.render(<App data={data}/>, document.getElementById('root'));
